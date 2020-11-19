@@ -1,0 +1,6 @@
+framework module Pods_FaceKeyboard {
+  umbrella header "Pods-FaceKeyboard-umbrella.h"
+
+  export *
+  module * { export * }
+}

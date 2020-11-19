@@ -1,0 +1,921 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46C8BC32B8C2596BCC9BD122 /* Pods_FaceKeyboardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C115AEAED98D72DA6F8839B /* Pods_FaceKeyboardTests.framework */; };
+		BFFD409586EE09CEFC215704 /* Pods_FaceKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6855EF974ECA272CC0F22786 /* Pods_FaceKeyboard.framework */; };
+		D4D0632025664E0400D6C390 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D0631F25664E0400D6C390 /* AppDelegate.m */; };
+		D4D0632325664E0400D6C390 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D0632225664E0400D6C390 /* SceneDelegate.m */; };
+		D4D0632625664E0400D6C390 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D0632525664E0400D6C390 /* ViewController.m */; };
+		D4D0632925664E0400D6C390 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4D0632725664E0400D6C390 /* Main.storyboard */; };
+		D4D0632B25664E0500D6C390 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4D0632A25664E0500D6C390 /* Assets.xcassets */; };
+		D4D0632E25664E0500D6C390 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4D0632C25664E0500D6C390 /* LaunchScreen.storyboard */; };
+		D4D0633125664E0500D6C390 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D0633025664E0500D6C390 /* main.m */; };
+		D4D0633B25664E0600D6C390 /* FaceKeyboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D0633A25664E0600D6C390 /* FaceKeyboardTests.m */; };
+		D4D0634625664E0600D6C390 /* FaceKeyboardUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D0634525664E0600D6C390 /* FaceKeyboardUITests.m */; };
+		D4D063682566502B00D6C390 /* ChatEmojiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D0635F2566502B00D6C390 /* ChatEmojiManager.m */; };
+		D4D063692566502B00D6C390 /* HLHorizontalPageLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D063612566502B00D6C390 /* HLHorizontalPageLayout.m */; };
+		D4D0636A2566502B00D6C390 /* SYTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D063622566502B00D6C390 /* SYTextView.m */; };
+		D4D0636B2566502B00D6C390 /* SYChatTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D063642566502B00D6C390 /* SYChatTextView.m */; };
+		D4D0636C2566502B00D6C390 /* ChatExpressionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D063652566502B00D6C390 /* ChatExpressionView.m */; };
+		D4D06376256654FC00D6C390 /* ChatEmojiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D06374256654FC00D6C390 /* ChatEmojiModel.m */; };
+		D4D0637C256655C800D6C390 /* ChatExpressionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D0637B256655C800D6C390 /* ChatExpressionCell.m */; };
+		D4D06382256655DF00D6C390 /* ChatExpressionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4D06381256655DF00D6C390 /* ChatExpressionCell.xib */; };
+		D4D06399256659A200D6C390 /* UITableView+HYBCacheHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D06395256659A200D6C390 /* UITableView+HYBCacheHeight.m */; };
+		D4D0639A256659A200D6C390 /* UITableViewCell+HYBMasonryAutoCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D06398256659A200D6C390 /* UITableViewCell+HYBMasonryAutoCellHeight.m */; };
+		D4D063A225665A6B00D6C390 /* ChatTextLeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D0639F25665A6B00D6C390 /* ChatTextLeftCell.m */; };
+		D4D063A325665A6B00D6C390 /* ChatTextRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D063A125665A6B00D6C390 /* ChatTextRightCell.m */; };
+		D4D063A825665B8B00D6C390 /* MessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D063A725665B8B00D6C390 /* MessageModel.m */; };
+		D4D063B32566665C00D6C390 /* Emotion.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D4D063B12566665C00D6C390 /* Emotion.bundle */; };
+		D4D063B42566665C00D6C390 /* Emotions.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4D063B22566665C00D6C390 /* Emotions.plist */; };
+		F31010CB2F4D2C39220BD624 /* Pods_FaceKeyboard_FaceKeyboardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FDB0C5DE19DDE597DE30509 /* Pods_FaceKeyboard_FaceKeyboardUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4D0633725664E0600D6C390 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4D0631325664E0400D6C390 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4D0631A25664E0400D6C390;
+			remoteInfo = FaceKeyboard;
+		};
+		D4D0634225664E0600D6C390 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4D0631325664E0400D6C390 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4D0631A25664E0400D6C390;
+			remoteInfo = FaceKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C115AEAED98D72DA6F8839B /* Pods_FaceKeyboardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaceKeyboardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D927E067EF6F56ED4612F55 /* Pods-FaceKeyboard-FaceKeyboardUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceKeyboard-FaceKeyboardUITests.debug.xcconfig"; path = "Target Support Files/Pods-FaceKeyboard-FaceKeyboardUITests/Pods-FaceKeyboard-FaceKeyboardUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		33DB90E2C204266A04DE3676 /* Pods-FaceKeyboardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceKeyboardTests.release.xcconfig"; path = "Target Support Files/Pods-FaceKeyboardTests/Pods-FaceKeyboardTests.release.xcconfig"; sourceTree = "<group>"; };
+		45DDFA1400A8D1804964876A /* Pods-FaceKeyboardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceKeyboardTests.debug.xcconfig"; path = "Target Support Files/Pods-FaceKeyboardTests/Pods-FaceKeyboardTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6855EF974ECA272CC0F22786 /* Pods_FaceKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaceKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FDB0C5DE19DDE597DE30509 /* Pods_FaceKeyboard_FaceKeyboardUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaceKeyboard_FaceKeyboardUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D9C43E6357772937B484F78 /* Pods-FaceKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceKeyboard.release.xcconfig"; path = "Target Support Files/Pods-FaceKeyboard/Pods-FaceKeyboard.release.xcconfig"; sourceTree = "<group>"; };
+		8DE038E1829214907913EFB4 /* Pods-FaceKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceKeyboard.debug.xcconfig"; path = "Target Support Files/Pods-FaceKeyboard/Pods-FaceKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		93BFF2202FFD27E2259732D7 /* Pods-FaceKeyboard-FaceKeyboardUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceKeyboard-FaceKeyboardUITests.release.xcconfig"; path = "Target Support Files/Pods-FaceKeyboard-FaceKeyboardUITests/Pods-FaceKeyboard-FaceKeyboardUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D4D0631B25664E0400D6C390 /* FaceKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4D0631E25664E0400D6C390 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D4D0631F25664E0400D6C390 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D4D0632125664E0400D6C390 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		D4D0632225664E0400D6C390 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		D4D0632425664E0400D6C390 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D4D0632525664E0400D6C390 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D4D0632825664E0400D6C390 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D4D0632A25664E0500D6C390 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D4D0632D25664E0500D6C390 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D4D0632F25664E0500D6C390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4D0633025664E0500D6C390 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D4D0633625664E0600D6C390 /* FaceKeyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceKeyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4D0633A25664E0600D6C390 /* FaceKeyboardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceKeyboardTests.m; sourceTree = "<group>"; };
+		D4D0633C25664E0600D6C390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4D0634125664E0600D6C390 /* FaceKeyboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceKeyboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4D0634525664E0600D6C390 /* FaceKeyboardUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceKeyboardUITests.m; sourceTree = "<group>"; };
+		D4D0634725664E0600D6C390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4D0635E2566502B00D6C390 /* SYTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYTextView.h; sourceTree = "<group>"; };
+		D4D0635F2566502B00D6C390 /* ChatEmojiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatEmojiManager.m; sourceTree = "<group>"; };
+		D4D063602566502B00D6C390 /* ChatExpressionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatExpressionView.h; sourceTree = "<group>"; };
+		D4D063612566502B00D6C390 /* HLHorizontalPageLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLHorizontalPageLayout.m; sourceTree = "<group>"; };
+		D4D063622566502B00D6C390 /* SYTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYTextView.m; sourceTree = "<group>"; };
+		D4D063632566502B00D6C390 /* ChatEmojiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatEmojiManager.h; sourceTree = "<group>"; };
+		D4D063642566502B00D6C390 /* SYChatTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYChatTextView.m; sourceTree = "<group>"; };
+		D4D063652566502B00D6C390 /* ChatExpressionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatExpressionView.m; sourceTree = "<group>"; };
+		D4D063662566502B00D6C390 /* SYChatTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYChatTextView.h; sourceTree = "<group>"; };
+		D4D063672566502B00D6C390 /* HLHorizontalPageLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLHorizontalPageLayout.h; sourceTree = "<group>"; };
+		D4D06374256654FC00D6C390 /* ChatEmojiModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatEmojiModel.m; sourceTree = "<group>"; };
+		D4D06375256654FC00D6C390 /* ChatEmojiModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatEmojiModel.h; sourceTree = "<group>"; };
+		D4D0637B256655C800D6C390 /* ChatExpressionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatExpressionCell.m; sourceTree = "<group>"; };
+		D4D06380256655D800D6C390 /* ChatExpressionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatExpressionCell.h; sourceTree = "<group>"; };
+		D4D06381256655DF00D6C390 /* ChatExpressionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatExpressionCell.xib; sourceTree = "<group>"; };
+		D4D06395256659A200D6C390 /* UITableView+HYBCacheHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+HYBCacheHeight.m"; sourceTree = "<group>"; };
+		D4D06396256659A200D6C390 /* UITableViewCell+HYBMasonryAutoCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+HYBMasonryAutoCellHeight.h"; sourceTree = "<group>"; };
+		D4D06397256659A200D6C390 /* UITableView+HYBCacheHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+HYBCacheHeight.h"; sourceTree = "<group>"; };
+		D4D06398256659A200D6C390 /* UITableViewCell+HYBMasonryAutoCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+HYBMasonryAutoCellHeight.m"; sourceTree = "<group>"; };
+		D4D0639E25665A6B00D6C390 /* ChatTextRightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTextRightCell.h; sourceTree = "<group>"; };
+		D4D0639F25665A6B00D6C390 /* ChatTextLeftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatTextLeftCell.m; sourceTree = "<group>"; };
+		D4D063A025665A6B00D6C390 /* ChatTextLeftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTextLeftCell.h; sourceTree = "<group>"; };
+		D4D063A125665A6B00D6C390 /* ChatTextRightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatTextRightCell.m; sourceTree = "<group>"; };
+		D4D063A725665B8B00D6C390 /* MessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageModel.m; sourceTree = "<group>"; };
+		D4D063AC25665B9C00D6C390 /* MessageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageModel.h; sourceTree = "<group>"; };
+		D4D063B12566665C00D6C390 /* Emotion.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Emotion.bundle; sourceTree = "<group>"; };
+		D4D063B22566665C00D6C390 /* Emotions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Emotions.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4D0631825664E0400D6C390 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFFD409586EE09CEFC215704 /* Pods_FaceKeyboard.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4D0633325664E0600D6C390 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46C8BC32B8C2596BCC9BD122 /* Pods_FaceKeyboardTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4D0633E25664E0600D6C390 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F31010CB2F4D2C39220BD624 /* Pods_FaceKeyboard_FaceKeyboardUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A1BC56F76F8A6060B4AEB88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6855EF974ECA272CC0F22786 /* Pods_FaceKeyboard.framework */,
+				6FDB0C5DE19DDE597DE30509 /* Pods_FaceKeyboard_FaceKeyboardUITests.framework */,
+				1C115AEAED98D72DA6F8839B /* Pods_FaceKeyboardTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4D0631225664E0400D6C390 = {
+			isa = PBXGroup;
+			children = (
+				D4D0631D25664E0400D6C390 /* FaceKeyboard */,
+				D4D0633925664E0600D6C390 /* FaceKeyboardTests */,
+				D4D0634425664E0600D6C390 /* FaceKeyboardUITests */,
+				D4D0631C25664E0400D6C390 /* Products */,
+				DFCF9CB829011A3192B9D93A /* Pods */,
+				4A1BC56F76F8A6060B4AEB88 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D4D0631C25664E0400D6C390 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4D0631B25664E0400D6C390 /* FaceKeyboard.app */,
+				D4D0633625664E0600D6C390 /* FaceKeyboardTests.xctest */,
+				D4D0634125664E0600D6C390 /* FaceKeyboardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4D0631D25664E0400D6C390 /* FaceKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D4D063BB25666A3300D6C390 /* DemoController */,
+				D4D063B02566664700D6C390 /* Resoure */,
+				D4D06386256658D300D6C390 /* Extend */,
+				D4D0635D25664FF400D6C390 /* ChatExpression */,
+				D4D0631E25664E0400D6C390 /* AppDelegate.h */,
+				D4D0631F25664E0400D6C390 /* AppDelegate.m */,
+				D4D0632125664E0400D6C390 /* SceneDelegate.h */,
+				D4D0632225664E0400D6C390 /* SceneDelegate.m */,
+				D4D0632725664E0400D6C390 /* Main.storyboard */,
+				D4D0632A25664E0500D6C390 /* Assets.xcassets */,
+				D4D0632C25664E0500D6C390 /* LaunchScreen.storyboard */,
+				D4D0632F25664E0500D6C390 /* Info.plist */,
+				D4D0633025664E0500D6C390 /* main.m */,
+			);
+			path = FaceKeyboard;
+			sourceTree = "<group>";
+		};
+		D4D0633925664E0600D6C390 /* FaceKeyboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				D4D0633A25664E0600D6C390 /* FaceKeyboardTests.m */,
+				D4D0633C25664E0600D6C390 /* Info.plist */,
+			);
+			path = FaceKeyboardTests;
+			sourceTree = "<group>";
+		};
+		D4D0634425664E0600D6C390 /* FaceKeyboardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D4D0634525664E0600D6C390 /* FaceKeyboardUITests.m */,
+				D4D0634725664E0600D6C390 /* Info.plist */,
+			);
+			path = FaceKeyboardUITests;
+			sourceTree = "<group>";
+		};
+		D4D0635D25664FF400D6C390 /* ChatExpression */ = {
+			isa = PBXGroup;
+			children = (
+				D4D0637A2566558800D6C390 /* View */,
+				D4D06373256654CD00D6C390 /* Model */,
+				D4D063632566502B00D6C390 /* ChatEmojiManager.h */,
+				D4D0635F2566502B00D6C390 /* ChatEmojiManager.m */,
+				D4D063672566502B00D6C390 /* HLHorizontalPageLayout.h */,
+				D4D063612566502B00D6C390 /* HLHorizontalPageLayout.m */,
+			);
+			path = ChatExpression;
+			sourceTree = "<group>";
+		};
+		D4D06373256654CD00D6C390 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D4D06375256654FC00D6C390 /* ChatEmojiModel.h */,
+				D4D06374256654FC00D6C390 /* ChatEmojiModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D4D0637A2566558800D6C390 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D4D0635E2566502B00D6C390 /* SYTextView.h */,
+				D4D063622566502B00D6C390 /* SYTextView.m */,
+				D4D063662566502B00D6C390 /* SYChatTextView.h */,
+				D4D063642566502B00D6C390 /* SYChatTextView.m */,
+				D4D063602566502B00D6C390 /* ChatExpressionView.h */,
+				D4D063652566502B00D6C390 /* ChatExpressionView.m */,
+				D4D06380256655D800D6C390 /* ChatExpressionCell.h */,
+				D4D0637B256655C800D6C390 /* ChatExpressionCell.m */,
+				D4D06381256655DF00D6C390 /* ChatExpressionCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D4D06386256658D300D6C390 /* Extend */ = {
+			isa = PBXGroup;
+			children = (
+				D4D06394256659A200D6C390 /* HYBMasonryAutoCellHeight */,
+			);
+			path = Extend;
+			sourceTree = "<group>";
+		};
+		D4D06394256659A200D6C390 /* HYBMasonryAutoCellHeight */ = {
+			isa = PBXGroup;
+			children = (
+				D4D06395256659A200D6C390 /* UITableView+HYBCacheHeight.m */,
+				D4D06396256659A200D6C390 /* UITableViewCell+HYBMasonryAutoCellHeight.h */,
+				D4D06397256659A200D6C390 /* UITableView+HYBCacheHeight.h */,
+				D4D06398256659A200D6C390 /* UITableViewCell+HYBMasonryAutoCellHeight.m */,
+			);
+			path = HYBMasonryAutoCellHeight;
+			sourceTree = "<group>";
+		};
+		D4D063B02566664700D6C390 /* Resoure */ = {
+			isa = PBXGroup;
+			children = (
+				D4D063B12566665C00D6C390 /* Emotion.bundle */,
+				D4D063B22566665C00D6C390 /* Emotions.plist */,
+			);
+			path = Resoure;
+			sourceTree = "<group>";
+		};
+		D4D063BB25666A3300D6C390 /* DemoController */ = {
+			isa = PBXGroup;
+			children = (
+				D4D063BE25666A9100D6C390 /* View */,
+				D4D063BD25666A8900D6C390 /* Model */,
+				D4D063BC25666A6F00D6C390 /* Controller */,
+			);
+			path = DemoController;
+			sourceTree = "<group>";
+		};
+		D4D063BC25666A6F00D6C390 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D4D0632425664E0400D6C390 /* ViewController.h */,
+				D4D0632525664E0400D6C390 /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D4D063BD25666A8900D6C390 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D4D063AC25665B9C00D6C390 /* MessageModel.h */,
+				D4D063A725665B8B00D6C390 /* MessageModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D4D063BE25666A9100D6C390 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D4D063A025665A6B00D6C390 /* ChatTextLeftCell.h */,
+				D4D0639F25665A6B00D6C390 /* ChatTextLeftCell.m */,
+				D4D0639E25665A6B00D6C390 /* ChatTextRightCell.h */,
+				D4D063A125665A6B00D6C390 /* ChatTextRightCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DFCF9CB829011A3192B9D93A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8DE038E1829214907913EFB4 /* Pods-FaceKeyboard.debug.xcconfig */,
+				7D9C43E6357772937B484F78 /* Pods-FaceKeyboard.release.xcconfig */,
+				1D927E067EF6F56ED4612F55 /* Pods-FaceKeyboard-FaceKeyboardUITests.debug.xcconfig */,
+				93BFF2202FFD27E2259732D7 /* Pods-FaceKeyboard-FaceKeyboardUITests.release.xcconfig */,
+				45DDFA1400A8D1804964876A /* Pods-FaceKeyboardTests.debug.xcconfig */,
+				33DB90E2C204266A04DE3676 /* Pods-FaceKeyboardTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D4D0631A25664E0400D6C390 /* FaceKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4D0634A25664E0600D6C390 /* Build configuration list for PBXNativeTarget "FaceKeyboard" */;
+			buildPhases = (
+				77B1729BED7F608FECBC205D /* [CP] Check Pods Manifest.lock */,
+				D4D0631725664E0400D6C390 /* Sources */,
+				D4D0631825664E0400D6C390 /* Frameworks */,
+				D4D0631925664E0400D6C390 /* Resources */,
+				FA846751007AD7FADEAE8485 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FaceKeyboard;
+			productName = FaceKeyboard;
+			productReference = D4D0631B25664E0400D6C390 /* FaceKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D4D0633525664E0600D6C390 /* FaceKeyboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4D0634D25664E0600D6C390 /* Build configuration list for PBXNativeTarget "FaceKeyboardTests" */;
+			buildPhases = (
+				2AEE6D2FFFD9E3AC78FF5866 /* [CP] Check Pods Manifest.lock */,
+				D4D0633225664E0600D6C390 /* Sources */,
+				D4D0633325664E0600D6C390 /* Frameworks */,
+				D4D0633425664E0600D6C390 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4D0633825664E0600D6C390 /* PBXTargetDependency */,
+			);
+			name = FaceKeyboardTests;
+			productName = FaceKeyboardTests;
+			productReference = D4D0633625664E0600D6C390 /* FaceKeyboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D4D0634025664E0600D6C390 /* FaceKeyboardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4D0635025664E0600D6C390 /* Build configuration list for PBXNativeTarget "FaceKeyboardUITests" */;
+			buildPhases = (
+				CDC54CFB3EB05FC7856429BB /* [CP] Check Pods Manifest.lock */,
+				D4D0633D25664E0600D6C390 /* Sources */,
+				D4D0633E25664E0600D6C390 /* Frameworks */,
+				D4D0633F25664E0600D6C390 /* Resources */,
+				E82EA0EEE3A13D6FC10D93EC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4D0634325664E0600D6C390 /* PBXTargetDependency */,
+			);
+			name = FaceKeyboardUITests;
+			productName = FaceKeyboardUITests;
+			productReference = D4D0634125664E0600D6C390 /* FaceKeyboardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4D0631325664E0400D6C390 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					D4D0631A25664E0400D6C390 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					D4D0633525664E0600D6C390 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = D4D0631A25664E0400D6C390;
+					};
+					D4D0634025664E0600D6C390 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = D4D0631A25664E0400D6C390;
+					};
+				};
+			};
+			buildConfigurationList = D4D0631625664E0400D6C390 /* Build configuration list for PBXProject "FaceKeyboard" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D4D0631225664E0400D6C390;
+			productRefGroup = D4D0631C25664E0400D6C390 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4D0631A25664E0400D6C390 /* FaceKeyboard */,
+				D4D0633525664E0600D6C390 /* FaceKeyboardTests */,
+				D4D0634025664E0600D6C390 /* FaceKeyboardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D4D0631925664E0400D6C390 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4D063B42566665C00D6C390 /* Emotions.plist in Resources */,
+				D4D0632E25664E0500D6C390 /* LaunchScreen.storyboard in Resources */,
+				D4D0632B25664E0500D6C390 /* Assets.xcassets in Resources */,
+				D4D0632925664E0400D6C390 /* Main.storyboard in Resources */,
+				D4D06382256655DF00D6C390 /* ChatExpressionCell.xib in Resources */,
+				D4D063B32566665C00D6C390 /* Emotion.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4D0633425664E0600D6C390 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4D0633F25664E0600D6C390 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2AEE6D2FFFD9E3AC78FF5866 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FaceKeyboardTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77B1729BED7F608FECBC205D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FaceKeyboard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDC54CFB3EB05FC7856429BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FaceKeyboard-FaceKeyboardUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E82EA0EEE3A13D6FC10D93EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FaceKeyboard-FaceKeyboardUITests/Pods-FaceKeyboard-FaceKeyboardUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FaceKeyboard-FaceKeyboardUITests/Pods-FaceKeyboard-FaceKeyboardUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FaceKeyboard-FaceKeyboardUITests/Pods-FaceKeyboard-FaceKeyboardUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA846751007AD7FADEAE8485 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FaceKeyboard/Pods-FaceKeyboard-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FaceKeyboard/Pods-FaceKeyboard-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FaceKeyboard/Pods-FaceKeyboard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4D0631725664E0400D6C390 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4D0632625664E0400D6C390 /* ViewController.m in Sources */,
+				D4D063A225665A6B00D6C390 /* ChatTextLeftCell.m in Sources */,
+				D4D0636C2566502B00D6C390 /* ChatExpressionView.m in Sources */,
+				D4D0636B2566502B00D6C390 /* SYChatTextView.m in Sources */,
+				D4D06399256659A200D6C390 /* UITableView+HYBCacheHeight.m in Sources */,
+				D4D0639A256659A200D6C390 /* UITableViewCell+HYBMasonryAutoCellHeight.m in Sources */,
+				D4D0637C256655C800D6C390 /* ChatExpressionCell.m in Sources */,
+				D4D063682566502B00D6C390 /* ChatEmojiManager.m in Sources */,
+				D4D0636A2566502B00D6C390 /* SYTextView.m in Sources */,
+				D4D0632025664E0400D6C390 /* AppDelegate.m in Sources */,
+				D4D06376256654FC00D6C390 /* ChatEmojiModel.m in Sources */,
+				D4D063A325665A6B00D6C390 /* ChatTextRightCell.m in Sources */,
+				D4D0633125664E0500D6C390 /* main.m in Sources */,
+				D4D063692566502B00D6C390 /* HLHorizontalPageLayout.m in Sources */,
+				D4D0632325664E0400D6C390 /* SceneDelegate.m in Sources */,
+				D4D063A825665B8B00D6C390 /* MessageModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4D0633225664E0600D6C390 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4D0633B25664E0600D6C390 /* FaceKeyboardTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4D0633D25664E0600D6C390 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4D0634625664E0600D6C390 /* FaceKeyboardUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4D0633825664E0600D6C390 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4D0631A25664E0400D6C390 /* FaceKeyboard */;
+			targetProxy = D4D0633725664E0600D6C390 /* PBXContainerItemProxy */;
+		};
+		D4D0634325664E0600D6C390 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4D0631A25664E0400D6C390 /* FaceKeyboard */;
+			targetProxy = D4D0634225664E0600D6C390 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D4D0632725664E0400D6C390 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4D0632825664E0400D6C390 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D4D0632C25664E0500D6C390 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4D0632D25664E0500D6C390 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D4D0634825664E0600D6C390 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D4D0634925664E0600D6C390 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D4D0634B25664E0600D6C390 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DE038E1829214907913EFB4 /* Pods-FaceKeyboard.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RF9P2LU6M2;
+				INFOPLIST_FILE = FaceKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sy.FaceKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)",
+					"/**",
+				);
+			};
+			name = Debug;
+		};
+		D4D0634C25664E0600D6C390 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D9C43E6357772937B484F78 /* Pods-FaceKeyboard.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RF9P2LU6M2;
+				INFOPLIST_FILE = FaceKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sy.FaceKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)",
+					"/**",
+				);
+			};
+			name = Release;
+		};
+		D4D0634E25664E0600D6C390 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45DDFA1400A8D1804964876A /* Pods-FaceKeyboardTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RF9P2LU6M2;
+				INFOPLIST_FILE = FaceKeyboardTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sy.FaceKeyboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FaceKeyboard.app/FaceKeyboard";
+			};
+			name = Debug;
+		};
+		D4D0634F25664E0600D6C390 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33DB90E2C204266A04DE3676 /* Pods-FaceKeyboardTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RF9P2LU6M2;
+				INFOPLIST_FILE = FaceKeyboardTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sy.FaceKeyboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FaceKeyboard.app/FaceKeyboard";
+			};
+			name = Release;
+		};
+		D4D0635125664E0600D6C390 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D927E067EF6F56ED4612F55 /* Pods-FaceKeyboard-FaceKeyboardUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RF9P2LU6M2;
+				INFOPLIST_FILE = FaceKeyboardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sy.FaceKeyboardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FaceKeyboard;
+			};
+			name = Debug;
+		};
+		D4D0635225664E0600D6C390 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93BFF2202FFD27E2259732D7 /* Pods-FaceKeyboard-FaceKeyboardUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RF9P2LU6M2;
+				INFOPLIST_FILE = FaceKeyboardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sy.FaceKeyboardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FaceKeyboard;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4D0631625664E0400D6C390 /* Build configuration list for PBXProject "FaceKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4D0634825664E0600D6C390 /* Debug */,
+				D4D0634925664E0600D6C390 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4D0634A25664E0600D6C390 /* Build configuration list for PBXNativeTarget "FaceKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4D0634B25664E0600D6C390 /* Debug */,
+				D4D0634C25664E0600D6C390 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4D0634D25664E0600D6C390 /* Build configuration list for PBXNativeTarget "FaceKeyboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4D0634E25664E0600D6C390 /* Debug */,
+				D4D0634F25664E0600D6C390 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4D0635025664E0600D6C390 /* Build configuration list for PBXNativeTarget "FaceKeyboardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4D0635125664E0600D6C390 /* Debug */,
+				D4D0635225664E0600D6C390 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D4D0631325664E0400D6C390 /* Project object */;
+}
